@@ -160,7 +160,7 @@
 			</Context>
 
 			<!-- 'bookstorestorefront' extension's context for tenant 'master' -->
-			<Context path="" docBase="C:\Repo\hy400\workspace\hybris\bin\custom\bookstore\bookstorestorefront/web/webroot" disableURLRewriting="true" useHttpOnly="true">
+			<Context path="" docBase="C:\Repo\hy400\workspace\hybris\bin\custom\bookstore\bookstorestorefront/web/webroot" useHttpOnly="true" disableURLRewriting="true">
 				<Manager pathname="" />
 				<Loader platformHome="C:\Repo\hy400\workspace\hybris\bin\platform" className="de.hybris.tomcat.HybrisWebappLoader" deployName="default" />
 			</Context>

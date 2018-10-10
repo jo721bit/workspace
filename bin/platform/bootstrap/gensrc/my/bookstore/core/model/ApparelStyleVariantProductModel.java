@@ -1,7 +1,7 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN! ---
- * --- Generated at 09.10.2018 12:58:55                         ---
+ * --- Generated at 10.10.2018 08:59:36                         ---
  * ----------------------------------------------------------------
  */
 package my.bookstore.core.model;
@@ -108,14 +108,14 @@ public class ApparelStyleVariantProductModel extends VariantProductModel
 	}
 	
 	/**
-	 * <i>Generated method</i> - Getter of the <code>ApparelStyleVariantProduct.swatchColors</code> attribute defined at extension <code>bookstorecore</code>. 
+	 * <i>Generated method</i> - Getter of the <code>ApparelStyleVariantProduct.swatchColors</code> dynamic attribute defined at extension <code>bookstorecore</code>. 
 	 * Consider using FlexibleSearchService::searchRelation for pagination support of large result sets.
 	 * @return the swatchColors - A normalized color mapping to a standardized front-end navigable name.
 	 */
 	@Accessor(qualifier = "swatchColors", type = Accessor.Type.GETTER)
 	public Set<SwatchColorEnum> getSwatchColors()
 	{
-		return getPersistenceContext().getPropertyValue(SWATCHCOLORS);
+		return getPersistenceContext().getDynamicValue(this,SWATCHCOLORS);
 	}
 	
 	/**
@@ -142,14 +142,14 @@ public class ApparelStyleVariantProductModel extends VariantProductModel
 	}
 	
 	/**
-	 * <i>Generated method</i> - Setter of <code>ApparelStyleVariantProduct.swatchColors</code> attribute defined at extension <code>bookstorecore</code>. 
+	 * <i>Generated method</i> - Setter of <code>ApparelStyleVariantProduct.swatchColors</code> dynamic attribute defined at extension <code>bookstorecore</code>. 
 	 *  
 	 * @param value the swatchColors - A normalized color mapping to a standardized front-end navigable name.
 	 */
 	@Accessor(qualifier = "swatchColors", type = Accessor.Type.SETTER)
 	public void setSwatchColors(final Set<SwatchColorEnum> value)
 	{
-		getPersistenceContext().setPropertyValue(SWATCHCOLORS, value);
+		getPersistenceContext().setDynamicValue(this,SWATCHCOLORS, value);
 	}
 	
 }

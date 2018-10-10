@@ -133,16 +133,12 @@ public class GeneratedTypeInitializer extends AbstractTypeInitializer
 	public void single_createattr_ApparelProduct_genders() throws JaloBusinessException
 	{
 		
-						Map sqlColumnDefinitions = null;
-					
-				createPropertyAttribute(
+				createDynamicAttribute(
 					"ApparelProduct", 
 					"genders",  
-					null,
 					"GenderList",
-					de.hybris.platform.jalo.type.AttributeDescriptor.READ_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.WRITE_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.OPTIONAL_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.REMOVE_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.SEARCH_FLAG,
 					null,
-					sqlColumnDefinitions
+					de.hybris.platform.jalo.type.AttributeDescriptor.READ_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.WRITE_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.OPTIONAL_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.REMOVE_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.SEARCH_FLAG
 				);
 			
 	}
@@ -167,16 +163,12 @@ public class GeneratedTypeInitializer extends AbstractTypeInitializer
 	public void single_createattr_ApparelStyleVariantProduct_swatchColors() throws JaloBusinessException
 	{
 		
-						Map sqlColumnDefinitions = null;
-					
-				createPropertyAttribute(
+				createDynamicAttribute(
 					"ApparelStyleVariantProduct", 
 					"swatchColors",  
-					null,
 					"SwatchColorSet",
-					de.hybris.platform.jalo.type.AttributeDescriptor.READ_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.WRITE_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.OPTIONAL_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.REMOVE_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.SEARCH_FLAG,
 					null,
-					sqlColumnDefinitions
+					de.hybris.platform.jalo.type.AttributeDescriptor.READ_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.WRITE_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.OPTIONAL_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.REMOVE_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.SEARCH_FLAG
 				);
 			
 	}
@@ -351,7 +343,7 @@ public class GeneratedTypeInitializer extends AbstractTypeInitializer
 								true,
 								null,
 								customPropsMap,
-								null
+								"ApparelProduct_gendersAttributeHandler"
 							);
 						}
 					
@@ -395,7 +387,7 @@ public class GeneratedTypeInitializer extends AbstractTypeInitializer
 								true,
 								null,
 								customPropsMap,
-								null
+								"ApparelStyleVariantProduct_swatchColorsAttributeHandler"
 							);
 						}
 					

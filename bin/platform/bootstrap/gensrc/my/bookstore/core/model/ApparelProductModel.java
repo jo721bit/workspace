@@ -1,7 +1,7 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN! ---
- * --- Generated at 09.10.2018 12:58:55                         ---
+ * --- Generated at 10.10.2018 08:59:36                         ---
  * ----------------------------------------------------------------
  */
 package my.bookstore.core.model;
@@ -78,25 +78,25 @@ public class ApparelProductModel extends ProductModel
 	
 	
 	/**
-	 * <i>Generated method</i> - Getter of the <code>ApparelProduct.genders</code> attribute defined at extension <code>bookstorecore</code>. 
+	 * <i>Generated method</i> - Getter of the <code>ApparelProduct.genders</code> dynamic attribute defined at extension <code>bookstorecore</code>. 
 	 * Consider using FlexibleSearchService::searchRelation for pagination support of large result sets.
 	 * @return the genders - List of genders that the ApparelProduct is designed for
 	 */
 	@Accessor(qualifier = "genders", type = Accessor.Type.GETTER)
 	public List<Gender> getGenders()
 	{
-		return getPersistenceContext().getPropertyValue(GENDERS);
+		return getPersistenceContext().getDynamicValue(this,GENDERS);
 	}
 	
 	/**
-	 * <i>Generated method</i> - Setter of <code>ApparelProduct.genders</code> attribute defined at extension <code>bookstorecore</code>. 
+	 * <i>Generated method</i> - Setter of <code>ApparelProduct.genders</code> dynamic attribute defined at extension <code>bookstorecore</code>. 
 	 *  
 	 * @param value the genders - List of genders that the ApparelProduct is designed for
 	 */
 	@Accessor(qualifier = "genders", type = Accessor.Type.SETTER)
 	public void setGenders(final List<Gender> value)
 	{
-		getPersistenceContext().setPropertyValue(GENDERS, value);
+		getPersistenceContext().setDynamicValue(this,GENDERS, value);
 	}
 	
 }
